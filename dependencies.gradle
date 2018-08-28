@@ -1,0 +1,91 @@
+def supportVersion = "27.0.2"
+def butterKnifeVersion = "8.8.1"
+def daggerVersion = "2.13"
+def retrofitVersion = "2.2.0"
+def rxandroidVersion = "1.2.1"
+def okHttpVersion = "3.7.0"
+def retrofitJsonVersion = "1.2"
+def fastJsonVersion = "1.2.31"
+def sonicVersion = "2.0.0"
+def glideVersion = "4.6.1"
+def frescoVersion = "1.3.0"
+def miiotVersion = "1.0.5"
+def bluetoothkitVersion = "1.3.4"
+def pickerViewVersion = "3.2.7"
+def mijiaVersion = "3.2.15"
+def greenDaoVersion = "3.2.2"
+def multidexVersion = "1.0.2"
+
+project.ext {
+    android = [
+            buildToolsVersion: "26.0.2",
+            compileSdkVersion: 26,
+            applicationId    : "com.mode.fridge",
+            minSdkVersion    : 21,
+            targetSdkVersion : 26,
+            versionCode      : 103,
+            versionName      : "1.0.3"
+    ]
+
+    dependencies = [
+            // android support
+            "appcompat-v7"                : "com.android.support:appcompat-v7:${supportVersion}",
+            "recyclerview-v7"             : "com.android.support:recyclerview-v7:${supportVersion}",
+            "design"                      : "com.android.support:design:${supportVersion}",
+            "cardview"                    : "com.android.support:cardview-v7:${supportVersion}",
+
+            // butterKnife
+            "butterknife"                 : "com.jakewharton:butterknife:${butterKnifeVersion}",
+            "butterknife-compiler"        : "com.jakewharton:butterknife-compiler:${butterKnifeVersion}",
+
+            // dagger2
+            "dagger"                      : "com.google.dagger:dagger:${daggerVersion}",
+            "dagger-android"              : "com.google.dagger:dagger-android-support:${daggerVersion}",
+            "dagger-compiler"             : "com.google.dagger:dagger-compiler:${daggerVersion}",
+            "dagger-processor"            : "com.google.dagger:dagger-android-processor:${daggerVersion}",
+
+            // retrofit(包含 RxJava 引用)
+            "retrofit"                    : "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            "adapter-rxjava"              : "com.squareup.retrofit2:adapter-rxjava:${retrofitVersion}",
+
+            // retrofit Json 解析
+            "retrofit2-fastjson-converter": "com.github.BaronZ88:Retrofit2-FastJson-Converter:${retrofitJsonVersion}",
+
+            // 返回数据 Json解析
+            "fastjson"                    : "com.alibaba:fastjson:${fastJsonVersion}",
+
+            // rx
+            "rxandroid"                   : "io.reactivex:rxandroid:${rxandroidVersion}",
+
+            // OkHttp
+            "okhttp3-logging-interceptor" : "com.squareup.okhttp3:logging-interceptor:${okHttpVersion}",
+
+            // sonic
+            "sonic"                       : "com.tencent.sonic:sdk:${sonicVersion}",
+
+            // Glide
+            "glide"                       : "com.github.bumptech.glide:glide:${glideVersion}",
+
+            // Fresco
+            "fresco"                      : "com.facebook.fresco:fresco:${frescoVersion}",
+            "fresco-gif"                  : "com.facebook.fresco:animated-gif:${frescoVersion}",
+
+            // MiIot
+            "miiot"                       : "com.mi.iot:MiotHostManager:${miiotVersion}",
+            "mijia-client"                : "com.xiaomi.miot:mijia-controller-client:${mijiaVersion}",
+            "mijia-service"               : "com.xiaomi.miot:mijia-controller-service:${mijiaVersion}",
+            "mijia-bluetooth"             : "com.xiaomi.miot:mijia-controller-bluetooth:${mijiaVersion}",
+
+            // BluetoothKit 蓝牙通信框架（MiIot需要）
+            "bluetoothkit"                : "com.inuker.bluetooth:library:${bluetoothkitVersion}",
+
+            // PickerView
+            "pickerview"                  : "com.contrarywind:Android-PickerView:${pickerViewVersion}",
+
+            // GreenDao
+            "greendao"                    : "org.greenrobot:greendao:${greenDaoVersion}",
+
+            // multidex
+            "multidex"                    : "com.android.support:multidex:${multidexVersion}"
+    ]
+}

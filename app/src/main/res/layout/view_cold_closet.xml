@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingRight="4dp"
+    android:paddingLeft="4dp"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/icon_cold_closet"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_toRightOf="@id/icon"
+        android:text="@string/text_cold_closet"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/temp"
+        android:text=""
+        android:layout_toRightOf="@id/title"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:layout_width="60dp"
+        android:gravity="left"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/temp_unit"
+        android:text="℃"
+        android:layout_toRightOf="@id/temp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/icon_decrease"
+        android:layout_toRightOf="@id/temp_unit"
+        android:layout_marginLeft="24dp"
+        android:src="@drawable/button_decrease"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.viomi.common.widget.SwitchButton
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/SwitchButtonStyle"
+        app:kswBackMeasureRatio="2.1"
+        app:kswThumbDrawable="@drawable/switch_thumb"
+        app:kswBackDrawable="@drawable/switch_backgroud"
+        app:kswThumbMarginBottom="2dp"
+        app:kswThumbMarginLeft="2dp"
+        app:kswThumbMarginRight="2dp"
+        app:kswThumbMarginTop="2dp"
+        app:kswBackRadius="23dp"
+        app:kswThumbRadius="21dp"
+        android:id="@+id/switch_button"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:kswTextOff="@string/switch_button_off"
+        app:kswTextOn="@string/switch_button_on"
+        android:textColor="@color/ksw_md_back_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:id="@+id/icon_increase"
+        android:layout_toLeftOf="@id/switch_button"
+        android:layout_marginRight="24dp"
+        android:src="@drawable/button_increase"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_centerVertical="true"
+        style="@style/Widget.SeekBar.NormalTemp"
+        android:max="60"
+        android:layout_toLeftOf="@id/icon_increase"
+        android:layout_marginRight="14dp"
+        android:layout_toRightOf="@id/icon_decrease"
+        android:layout_marginLeft="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/iced_drink_button"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/text_iced_drink"
+        android:textSize="16sp"
+        android:layout_alignLeft="@id/icon"
+        android:layout_below="@id/icon"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/scene_text_color"
+        android:background="@drawable/control_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+
+</RelativeLayout>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="@dimen/iot_device_item_width"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_water_machine_top_white"
+            android:orientation="vertical">
+            <!--android:text="云米互联网洗衣机"-->
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="22dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="--"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+            <!--android:text="$5998"-->
+            <!--<TextView-->
+            <!--android:id="@+id/tv_des"-->
+            <!--android:text="$5998"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:ellipsize="end"-->
+            <!--android:gravity="center"-->
+            <!--android:singleLine="true" />-->
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="--"
+                android:textColor="@color/color_green"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1.5px"
+                android:layout_marginTop="10dp"
+                android:background="@color/class_E_50_trans"></LinearLayout>
+            <!--android:src="@drawable/icon_device_hood_a6"-->
+            <ImageView
+                android:id="@+id/iv_device_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="22dp"
+                android:layout_marginTop="22dp"
+                android:src="@drawable/icon_device_hood_a6"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/cell_item_height"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dp"
+                        android:text="洗涤模式"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_model"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="18dp"
+                        android:text="--"
+                        android:textColor="@color/color_green"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/class_E_50_trans" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_temp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/cell_item_height"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dp"
+                        android:text="设定水温"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="18dp"
+                        android:text="--"
+                        android:textColor="@color/color_green"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/class_E_50_trans" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/cell_item_height"
+
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dp"
+                        android:text="漂洗次数"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_wash_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="18dp"
+                        android:text="--"
+                        android:textColor="@color/color_green"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/class_E_50_trans" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_speed"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/cell_item_height"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="18dp"
+                        android:text="脱水速度"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_speed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="18dp"
+                        android:text="--"
+                        android:textColor="@color/color_green"
+                        android:textSize="20sp" />
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1.5px"-->
+                        <!--android:layout_alignParentBottom="true"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:background="@color/class_E_50_trans" />-->
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_add_store"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cell_item_height"
+            android:background="@drawable/bg_water_machine_bottom_green"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_add_store"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="加入购物车"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_status"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cell_item_height"
+            android:background="@drawable/bg_water_machine_bottom_gray"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="预计下午14结束"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cell_item_height"
+            android:background="@drawable/bg_water_machine_bottom_white"
+            android:visibility="visible">
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

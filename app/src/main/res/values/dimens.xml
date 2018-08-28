@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="iot_device_item_width">460dp</dimen>
+    <dimen name="iot_device_item_height">726dp</dimen>
+    <dimen name="cell_item_height">88dp</dimen>>
+    <dimen name="font_size_11sp">11sp</dimen>
+</resources>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns="urn:schemas-mi-com:device-1-0">
+    <specVersion>
+        <major>1</major>
+        <minor>0</minor>
+    </specVersion>
+    <device>
+        <type>urn:schemas-mi-com:device:WaterPurifier:Base:1</type>
+        <friendlyName>经济型侧吸机</friendlyName>
+        <firmwareVersion>1</firmwareVersion>
+        <modelNumber>2016</modelNumber>
+        <modelName>yunmi.waterpurifier.v2</modelName>
+        <modelDescription>经济型侧吸机</modelDescription>
+        <modelURL>http://www.com.com</modelURL>
+        <manufacturer>Yunmi</manufacturer>
+        <manufacturerURL>http://www.com.com</manufacturerURL>
+
+        <serviceList>
+            <service>
+                <type>urn:schemas-mi-com:service:WaterPurifier:BaseService:1</type>
+                <description>净水器服务</description>
+
+                <actionList>
+                </actionList>
+                
+                <propertyList>
+
+                    <property gettable="true" notifiable="true">
+                        <friendlyName>ButtonPressed</friendlyName>
+                        <internalName>button_pressed</internalName>
+                        <description>按键状态</description>
+                        <dataType>string</dataType>
+                        <allowedValueList>
+                            <allowedValue>tap</allowedValue>
+                            <allowedValue>pure</allowedValue>
+                            <allowedValue>select</allowedValue>
+                            <allowedValue>reset</allowedValue>
+                        </allowedValueList>
+                    </property>
+                    <property gettable="true" notifiable="true">
+                        <friendlyName>Mode</friendlyName>
+                        <internalName>mode</internalName>
+                        <description>制水模式</description>
+                        <dataType>string</dataType>
+                        <allowedValueList>
+                            <allowedValue>idle</allowedValue>
+                            <allowedValue>purifying</allowedValue>
+                        </allowedValueList>
+                    </property>
+                    <property gettable="true" notifiable="true">
+                        <friendlyName>ModeType</friendlyName>
+                        <internalName>model_type</internalName>
+                        <description>设备类型（厨上厨下）</description>
+                        <dataType>string</dataType>
+                        <allowedValueList>
+                            <allowedValue>desktop</allowedValue>
+                            <allowedValue>deskbottom</allowedValue>
+                        </allowedValueList>
+                    </property>
+                    <property gettable="true" notifiable="true">
+                        <friendlyName>Prop</friendlyName>
+                        <internalName></internalName>
+                        <description>获取基本属性</description>
+                        <dataType>string</dataType>
+                    </property>
+                </propertyList>
+                
+            </service>
+        </serviceList>
+    </device>
+</root>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/holder_device_type_2_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/icon_device_circle_blue"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!--设备图标-->
+    <ImageView
+        android:id="@+id/holder_device_type_2_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:src="@drawable/icon_device_scene_air_purifier" />
+
+    <!--设备名称-->
+    <TextView
+        android:id="@+id/holder_device_type_2_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/iot_device_air_purifier"
+        android:textColor="@color/color_white_alpha_80"
+        android:textSize="16sp" />
+
+    <!--冰箱布局-->
+    <LinearLayout
+        android:id="@+id/ll_bot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <!--冷藏室-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <!--温度-->
+            <TextView
+                android:id="@+id/holder_device_type_fridge_cold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fridge_room_cold"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                tools:ignore="SmallSp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/holder_device_type_line1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            android:background="@android:color/white" />
+
+        <!--变温室-->
+        <LinearLayout
+            android:id="@+id/holder_device_type_changeable_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <!--温度-->
+            <TextView
+                android:id="@+id/holder_device_type_fridge_changeable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fridge_room_changeable"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                tools:ignore="SmallSp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/holder_device_type_line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            android:background="@android:color/white" />
+
+        <!--冷冻室-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <!--温度-->
+            <TextView
+                android:id="@+id/holder_device_type_fridge_freezing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fridge_room_freezing"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                tools:ignore="SmallSp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

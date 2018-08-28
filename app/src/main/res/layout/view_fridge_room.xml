@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mode.fridge.widget.SnowRatoteView
+        xmlns:rotate="http://schemas.android.com/apk/res-auto"
+        android:background="@android:color/transparent"
+        android:id="@+id/room_set_animation"
+        rotate:iamgeSrc="@mipmap/snow_rotato"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:layout_width="140dp"
+        android:layout_height="140dp" />
+
+    <TextView
+        android:id="@+id/temp_view"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="52dp"
+        android:layout_marginLeft="24dp"
+        android:textSize="70sp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/room_name"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/temp_view"
+        android:layout_marginLeft="24dp"
+        android:text="℃"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

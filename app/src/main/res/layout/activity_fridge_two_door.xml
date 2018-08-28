@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/control_view"
+        android:layout_width="1180dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/background_gradient"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/left_view"
+            layout="@layout/layout_activity_fridge_left_two_door"
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"></include>
+
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/drawerlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/left_view">
+
+            <RelativeLayout
+                android:id="@+id/normal_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/frige_backgroud_color">
+
+                <ImageView
+                    android:id="@+id/xiaoxian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/xiaoxian" />
+
+                <TextView
+                    android:id="@+id/chat_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/xiaoxian"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="6dp"
+                    android:text="@string/text_frist_chat"
+                    android:textColor="@color/control_enable_color"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/status_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="100dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:background="@drawable/status_button_shape"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:text="222"
+                    android:textColor="@color/orange"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/setting_view"
+                layout="@layout/layout_activity_fridge_middle_top_two_door"
+                android:layout_width="1000dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"></include>
+        </android.support.v4.widget.DrawerLayout>
+    </RelativeLayout>
+
+    <include
+        layout="@layout/layout_activity_fridge_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/control_view"></include>
+
+    <RelativeLayout
+        android:id="@+id/user_tips_layout"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="-10dp"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/user_tips_border"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/user_tips"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:text=""
+            android:textColor="@color/control_enable_color"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/tips_colse"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:src="@mipmap/icon_close" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

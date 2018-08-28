@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/color_theme">
+
+    <!--返回-->
+    <ImageView
+        android:id="@+id/title_bar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="11dp"
+        android:contentDescription="@null"
+        android:src="@drawable/icon_title_bar_back" />
+
+    <!--标题-->
+    <TextView
+        android:id="@+id/title_bar_title"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/title_bar_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="40dp"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/title_bar_right_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="40dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/title_bar_right_image"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:contentDescription="@null"
+        android:scaleType="centerInside"
+        android:visibility="gone"
+        tools:src="@drawable/icon_title_setting" />
+</FrameLayout>

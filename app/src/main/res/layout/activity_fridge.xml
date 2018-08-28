@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/control_view"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/background_gradient"
+        android:layout_width="1180dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/left_view"
+            android:layout_alignParentLeft="true"
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            layout="@layout/layout_activity_fridge_left"></include>
+
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/drawerlayout"
+            android:layout_toRightOf="@id/left_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:background="@color/frige_backgroud_color"
+                android:id="@+id/normal_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/xiaoxian"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/xiaoxian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/chat_view"
+                    android:layout_below="@id/xiaoxian"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:text="@string/text_frist_chat"
+                    android:textColor="@color/control_enable_color"
+                    android:textSize="24dp"
+                    android:lineSpacingExtra="6dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/status_view"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="100dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:textColor="@color/orange"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:text="222"
+                    android:visibility="gone"
+                    android:padding="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/status_button_shape"
+                    android:ellipsize="marquee"
+                    android:maxLines="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/setting_view"
+                android:layout_gravity="start"
+                android:layout_width="1000dp"
+                android:layout_height="match_parent"
+                layout="@layout/layout_activity_fridge_middle_top">
+            </include>
+        </android.support.v4.widget.DrawerLayout>
+    </RelativeLayout>
+
+    <include
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/control_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/layout_activity_fridge_right"
+    >
+    </include>
+
+    <RelativeLayout
+        android:background="@drawable/user_tips_border"
+        android:layout_width="400dp"
+        android:id="@+id/user_tips_layout"
+        android:layout_marginTop="34dp"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-10dp"
+        android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/user_tips"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:layout_width="240dp"
+                android:textColor="@color/control_enable_color"
+                android:textSize="16sp"
+                android:text=""
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/tips_colse"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="4dp"
+                android:src="@mipmap/icon_close"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+
+
+</RelativeLayout>

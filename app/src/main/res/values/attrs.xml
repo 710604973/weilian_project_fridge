@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImageButtonWithText">
+        <attr name="picture" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandTextView">
+        <attr name="showLines" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="FridgeRoomText">
+        <attr name="nameText" format="string" />
+        <attr name="index" format="integer" />
+        <attr name="animGravity" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ProgressWheel">
+        <attr name="text" format="string" />
+        <attr name="textColor" />
+        <attr name="textSize" />
+        <attr name="unitTextSize" format="dimension" />
+        <attr name="barColor" format="color" />
+        <attr name="rimColor" format="color" />
+        <attr name="rimWidth" format="dimension" />
+        <attr name="spinSpeed" format="dimension" />
+        <attr name="delayMillis" format="integer" />
+        <attr name="circleColor" format="color" />
+        <attr name="radius" format="dimension" />
+        <attr name="barWidth" format="dimension" />
+        <attr name="barLength" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ImageRotate">
+        <attr name="iamgeSrc" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="SnowingView">
+        <attr name="src" format="reference" />
+        <attr name="snowCount" format="integer" />
+    </declare-styleable>
+
+    <!--设备分类（不可更改顺序）-->
+    <string-array name="device_type_list">
+        <item>冰箱</item>
+        <item>蒸烤箱</item>
+        <item>烟灶</item>
+        <item>净水器</item>
+        <item>即热饮水吧</item>
+        <item>中央净水器</item>
+        <item>中央软水机</item>
+        <item>洗碗机</item>
+        <item>洗衣机</item>
+        <item>热水器</item>
+        <item>空气净化器</item>
+        <item>风扇</item>
+        <item>香熏机</item>
+        <item>养生壶</item>
+        <item>扫地机器人</item>
+    </string-array>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="kswThumbDrawable" format="reference"/>
+        <attr name="kswThumbColor" format="color|reference"/>
+        <attr name="kswThumbMargin" format="dimension|reference"/>
+        <attr name="kswThumbMarginTop" format="dimension|reference"/>
+        <attr name="kswThumbMarginBottom" format="dimension|reference"/>
+        <attr name="kswThumbMarginLeft" format="dimension|reference"/>
+        <attr name="kswThumbMarginRight" format="dimension|reference"/>
+        <attr name="kswThumbWidth" format="dimension|reference"/>
+        <attr name="kswThumbHeight" format="dimension|reference"/>
+        <attr name="kswThumbRadius" format="dimension|reference"/>
+        <attr name="kswBackRadius" format="dimension|reference"/>
+        <attr name="kswBackDrawable" format="reference"/>
+        <attr name="kswBackColor" format="color|reference"/>
+        <attr name="kswFadeBack" format="boolean"/>
+        <attr name="kswBackMeasureRatio" format="float"/>
+        <attr name="kswAnimationDuration" format="integer"/>
+        <attr name="kswTintColor" format="color|reference"/>
+        <attr name="kswTextOn" format="string"/>
+        <attr name="kswTextOff" format="string"/>
+        <attr name="kswTextMarginH" format="dimension"/>
+        <attr name="kswAutoAdjustTextPosition" format="boolean"/>
+    </declare-styleable>
+</resources>

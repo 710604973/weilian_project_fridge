@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:room="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/background_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <com.mode.fridge.widget.snowingview.SnowingSurfaceView
+            android:id="@+id/snowing_view1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            room:src="@mipmap/ic_snowflake"
+            room:snowCount="7"
+            />
+
+        <ImageView
+            android:id="@+id/image_wave1"
+            android:src="@mipmap/wave_1"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/image_wave2"
+            android:src="@mipmap/wave_2"
+            android:visibility="gone"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/image_wave3"
+            android:src="@mipmap/wave_3"
+            android:visibility="gone"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="36dp"
+            android:src="@mipmap/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/firdge_view"
+            android:background="@mipmap/fridge_outline"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_width="236dp"
+            android:layout_height="wrap_content">
+                <com.mode.fridge.widget.FridgeRoomView
+                    room:nameText="@string/text_cold_closet"
+                    android:id="@+id/cc_room"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp">
+                </com.mode.fridge.widget.FridgeRoomView>
+
+                <com.mode.fridge.widget.FridgeRoomView
+                    room:nameText="@string/text_temp_changeable_room"
+                    android:id="@+id/tc_room"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp">
+                </com.mode.fridge.widget.FridgeRoomView>
+
+                <com.mode.fridge.widget.FridgeRoomView
+                    room:nameText="@string/text_freezing_room"
+                    android:id="@+id/fz_room"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp">
+                </com.mode.fridge.widget.FridgeRoomView>
+        </LinearLayout>
+
+</RelativeLayout>

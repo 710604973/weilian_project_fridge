@@ -1,0 +1,407 @@
+<resources>
+    <string name="app_name">mode_fridge</string>
+    <string name="button_setting">设置</string>
+    <string name="text_frist_chat">主人你好！\n我的名字叫小小鲜，很高兴认识您！\n我饿了，快放满食物喂饱我吧！</string>
+    <string name="button_model_holiday">假日模式</string>
+    <string name="button_model_smart">智能模式</string>
+    <string name="button_one_key_clean">一键净化</string>
+    <string name="text_quick_cooling">速冷</string>
+    <string name="text_quick_freeze">速冻</string>
+    <string name="text_iced_drink">冰饮</string>
+    <string name="text_filter_status">滤芯状态</string>
+    <string name="button_ok">确认</string>
+    <string name="button_cancel">取消</string>
+    <string name="text_confirm_filter_reset">确认已更好全新的滤芯，并初始化滤芯寿命吗？</string>
+
+    <string name="text_cold_closet">冷藏室</string>
+    <string name="text_temp_changeable_room">变温室</string>
+    <string name="text_freezing_room">冷冻室</string>
+    <string name="button_current_temp">当前温度：</string>
+    <string name="text_need_alter_filter">需要更换滤芯</string>
+
+    <string name="switch_button_on">开</string>
+    <string name="switch_button_off">关</string>
+    <string name="button_cleanning">净化中</string>
+    <string name="text_scene_cc">冷藏</string>
+    <string name="text_scene_freeze">冷冻</string>
+    <string name="text_scene_rtc">软冷冻</string>
+    <string name="text_scene_unfreeze">解冻</string>
+    <string name="text_scene_beef">肉类</string>
+    <string name="text_scene_dry_cargo">干货</string>
+    <string name="text_scene_vegetable">蔬菜</string>
+    <string name="text_scene_fruit">水果</string>
+    <string name="text_scene_ort">剩菜</string>
+    <string name="text_scene_egg">鸡蛋</string>
+    <string name="text_scene_ice_beer">冰啤</string>
+    <string name="text_scene_fresh_beer">鲜啤</string>
+    <string name="text_scene_warm_beer">暖啤</string>
+    <string name="text_scene_more">更多</string>
+    <string name="text_scene_custom">自定义</string>
+    <string name="text_scene_fish">鱼</string>
+    <string name="text_scene_tea">茶叶</string>
+    <string name="text_scene_mask">面膜</string>
+    <string name="text_scene_ice_cream">雪糕</string>
+    <string name="text_scene_breast_milk">母乳</string>
+    <string name="title_filter_status">滤芯状态</string>
+
+    <string name="toast_set_fail">设置失败，请重新设置</string>
+    <string name="toast_commodity_inspection_running">商检中，不能修改设置</string>
+    <string name="text_stream_music">媒体音量</string>
+    <string name="text_error_traffic">通信故障</string>
+    <string name="text_error_ccroom_sencor">冷藏室传感器故障</string>
+    <string name="text_error_tcroom_sencor">变温室传感器故障</string>
+    <string name="text_error_fzroom_sencor">冷冻室传感器故障</string>
+    <string name="text_error_cc_defrost_sencor">冷藏化霜传感器故障</string>
+    <string name="text_error_fz_defrost_sencor">冷冻化霜传感器故障</string>
+    <string name="text_error_indoor_sencor">环境温度传感器故障</string>
+    <string name="text_error_air_door">风门故障</string>
+    <string name="text_error_ccroom_fan">冷藏风扇故障</string>
+    <string name="text_error_tcroom_fan">冷凝风扇故障</string>
+    <string name="text_error_fzroom_fan">冷冻风扇故障</string>
+
+    <string name="text_scene_cc_desc">冷藏既不会冻坏也能保鲜时间最长</string>
+    <string name="text_scene_freeze_desc">冷冻状态</string>
+    <string name="text_scene_rtc_desc">将食物进行软冷冻储存，保证食物营养不流失,也不会冻结</string>
+    <string name="text_scene_unfreeze_desc">将食物解冻</string>
+    <string name="text_scene_beef_desc">保障肉类新鲜的口感</string>
+    <string name="text_scene_dry_cargo_desc">防止干货受潮</string>
+    <string name="text_scene_vegetable_desc">保持蔬菜内部高湿度，利于存储</string>
+    <string name="text_scene_fruit_desc">降低水果酶的活性，延缓呼吸代谢，抑制细菌生长</string>
+    <string name="text_scene_ort_desc">抑制亚硝酸盐的增长</string>
+    <string name="text_scene_egg_desc">延长鸡蛋的保质期，可达40天</string>
+    <string name="text_scene_ice_beer_desc">适合冷藏冰啤</string>
+    <string name="text_scene_fresh_beer_desc">适合冷藏鲜啤</string>
+    <string name="text_scene_warm_beer_desc">适合暖啤</string>
+    <string name="text_scene_fish_desc">便于保留鱼的鲜美味道</string>
+    <string name="text_scene_tea_desc">适合保留茶叶原有的色泽和香味</string>
+    <string name="text_scene_mask_desc">更好锁住面膜的营养，利于吸收</string>
+    <string name="text_scene_ice_cream_desc">保持雪糕的最佳口感</string>
+    <string name="text_scene_breast_milk_desc">冰箱不常开门的话，最就可保存长达6个月哦</string>
+    <string name="text_wakeup_tips">您好，呼叫“小鲜小鲜”、“云米冰箱”或“冰箱冰箱”可以唤醒我哦</string>
+    <string name="text_not_wakeup_tips">您好，开启智能语音功能，可以跟小鲜对话哦</string>
+
+
+    <string name="title_scene_set_title">变温室场景设置</string>
+    <string name="title_scene_choose">显示区</string>
+    <string name="title_scene_alternative">备选区</string>
+    <string name="button_save">保存</string>
+    <string name="toast_max_scene_arrive">亲，最多展示六种场景哈</string>
+    <string name="toast_min_scene_arrive">亲，最少选择两种场景哦~</string>
+    <string name="text_filter_remain">滤芯剩余：</string>
+    <string name="title_you_can_talk">你可以这样对“我”说：</string>
+    <string name="button_i_know">知道了</string>
+    <string name="button_not_tips">不再提示</string>
+    <string name="title_door_open_alert">冰箱门已开启，请尽早关闭哦</string>
+    <string name="title_door_open_tiem">开启时长:</string>
+
+    <string name="net_error">当前的网络不太好</string>
+    <string name="try_again">重试</string>
+    <string name="management_login_retry">重新获取</string>
+    <string name="management_login_error_tip">登录超时，请重新扫码</string>
+    <string name="management_no_login">未登录</string>
+    <string name="management_account">云米账号：%1$s</string>
+    <string name="management_logout_message">您确认退出登录吗？</string>
+    <string name="management_login_success">登录成功</string>
+    <string name="management_login_in">登录中…</string>
+    <string name="management_logout_fail">注销登录失败</string>
+    <!--登录指引-->
+    <string name="login_guide_title">登录指引</string>
+    <string name="home_room_cold">冷藏室</string>
+    <string name="home_room_cc">冷藏变温区</string>
+    <string name="home_room_changeable">变温室</string>
+    <string name="home_room_freezing">冷冻室</string>
+
+    <array name="fridge_errors">
+        <item>通信故障</item>
+        <item>冷藏室传感器故障</item>
+        <item>变温室传感器故障</item>
+        <item>冷冻室传感器故障</item>
+        <item>冷藏化霜传感器故障</item>
+        <item>冷冻化霜传感器故障</item>
+        <item>环境温度传感器故障</item>
+        <item>风门故障</item>
+        <item>冷藏风扇故障</item>
+        <item>冷凝风扇故障</item>
+        <item>冷冻风扇故障</item>
+        <item>冷藏门开报警</item>
+        <item>变温门开报警</item>
+        <item>冷冻门开报警</item>
+        <item>化霜不良报警</item>
+        <item>冷藏高温报警</item>
+        <item>冷藏低温报警</item>
+        <item>变温高温报警</item>
+        <item>变温低温报警</item>
+        <item>冷冻高温报警</item>
+        <item>冷冻低温报警</item>
+    </array>
+
+    <array name="sweep_models">
+        <item>睡眠/暂停</item>
+        <item>待机</item>
+        <item>智能清扫</item>
+        <item>自动拖地</item>
+        <item>重点清扫</item>
+        <item>回充中</item>
+        <item>充电中</item>
+        <item>满电</item>
+    </array>
+
+    <array name="wash_machine_progress">
+        <item>空闲</item>
+        <item>称重</item>
+        <item>洗涤</item>
+        <item>漂洗</item>
+        <item>脱水</item>
+        <item>洗涤结束</item>
+        <item>停机</item>
+        <item>关机</item>
+    </array>
+
+    <array name="progress">
+        <item>空闲中</item>
+        <item>预洗</item>
+        <item>主洗</item>
+        <item>冲洗</item>
+        <item>漂洗</item>
+        <item>干燥</item>
+        <item>洗涤结束</item>
+    </array>
+
+    <array name="wash_progress">
+        <item>关机</item>
+        <item>待机</item>
+        <item>安全检查</item>
+        <item>安全检查暂停</item>
+        <item>预约</item>
+        <item>浸泡运行</item>
+        <item>浸泡暂停</item>
+        <item>洗涤运行</item>
+        <item>洗涤暂停</item>
+        <item>漂洗运行</item>
+        <item>漂洗暂停</item>
+        <item>脱水运行</item>
+        <item>脱水暂停</item>
+        <item>除菌运行</item>
+        <item>除菌暂停</item>
+        <item>烘干运行</item>
+        <item>烘干暂停</item>
+        <item>洗衣完成</item>
+        <item>冷却中</item>
+        <item>防皱中</item>
+        <item>请取衣</item>
+        <item>结束中</item>
+        <item>清理中</item>
+        <item>准备中</item>
+        <item>准备中暂停</item>
+    </array>
+
+    <string name="iot_fan_natural">自然风</string>
+    <string name="iot_fan_standard">标准风</string>
+    <string name="iot_fan_saving">节能风</string>
+
+    <string name="iot_wash_dish_standar">标准洗</string>
+    <string name="iot_wash_dish_economic">经济洗</string>
+    <string name="iot_wash_dish_fast">快速洗</string>
+    <string name="iot_wash_dish_custom">自定义</string>
+    <string name="iot_wash_dish_salt_no">无盐</string>
+    <string name="iot_wash_dish_salt_yes">有盐</string>
+
+    <string name="iot_wash_dish_ldj_no">无亮碟剂</string>
+    <string name="iot_wash_dish_ldj_yes">有亮碟剂</string>
+
+    <string name="iot_range_hood_pm">PM2.5</string>
+    <string name="iot_range_hood_setting">设置</string>
+    <string name="iot_range_hood_using">使用中</string>
+    <string name="iot_range_hood_stove_no_link">燃气灶未连接</string>
+    <string name="iot_range_hood_stove_no_running">烟灶未联动</string>
+    <string name="iot_range_hood_stove_running">烟灶联动中</string>
+    <string name="iot_range_hood_stove_closed">燃气灶已关闭</string>
+    <string name="iot_range_hood_stove_fire_low">小火</string>
+    <string name="iot_range_hood_stove_fire_heavy">大火</string>
+    <string name="iot_range_hood_closed">油烟机已关闭</string>
+    <string name="iot_range_hood_closing_delay">延时关机中</string>
+    <string name="iot_range_hood_free">空闲中</string>
+    <string name="iot_range_hood_close">关闭</string>
+    <string name="iot_range_hood_low_desc">低挡排烟模式</string>
+    <string name="iot_range_hood_high_desc">高挡排烟模式</string>
+    <string name="iot_range_hood_fry_desc">"爆炒排烟模式"</string>
+    <string name="iot_range_hood_running_time">运行时间</string>
+    <string name="iot_range_hood_running_count">运行次数</string>
+    <string name="iot_range_hood_purification_quantity">净化量(m³)</string>
+    <string name="iot_range_hood_air_quality">空气质量</string>
+    <string name="iot_range_hood_power">开关</string>
+    <string name="iot_range_hood_low">低挡</string>
+    <string name="iot_range_hood_high">高挡</string>
+    <string name="iot_range_hood_fry">爆炒</string>
+    <string name="iot_range_hood_light">灯光</string>
+    <string name="iot_range_hood_air_good">优</string>
+    <string name="iot_range_hood_air_better">良</string>
+    <string name="iot_range_hood_air_poor_1">轻度污染</string>
+    <string name="iot_range_hood_air_poor_2">中度污染</string>
+    <string name="iot_range_hood_air_poor_3">重度污染</string>
+    <string name="iot_range_hood_air_poor_4">严重污染</string>
+    <string name="iot_camera_loading">加载中…</string>
+    <string name="iot_camera_offline">设备已离线</string>
+    <string name="iot_please_look_forward">敬请期待</string>
+    <string name="iot_add_no_txt">还未添加</string>
+
+    <string name="iot_water_purifier_tds">净化后 TDS</string>
+    <string name="iot_water_purifier_water_temp">自来水水温</string>
+    <string name="iot_water_purifier_water_temp_value">%1$d℃</string>
+    <string name="iot_water_purifier_uv">UV杀菌</string>
+    <string name="iot_water_purifier_uv_working">杀菌中</string>
+    <string name="iot_water_purifier_uv_free">空闲中</string>
+    <string name="iot_water_purifier_water_rationing">制水状态</string>
+    <string name="iot_water_purifier_water_rationing_working">制水中</string>
+    <string name="iot_water_purifier_water_rationing_free">空闲中</string>
+    <string name="iot_water_purifier_water_gage">水压</string>
+    <string name="iot_water_purifier_water_gage_value">%1$1.1fMpa</string>
+    <string name="iot_water_purifier_water_switch">智能三通阀</string>
+    <string name="iot_water_purifier_water_switch_open">开启</string>
+    <string name="iot_water_purifier_water_switch_close">关闭</string>
+    <string name="iot_water_purifier_filter_pp">PP棉滤芯</string>
+    <string name="iot_water_purifier_filter_pp_remain">PP棉滤芯剩余</string>
+    <string name="iot_water_purifier_filter_pp_desc">去除泥沙、铁锈等大颗粒</string>
+    <string name="iot_water_purifier_filter_pp_desc1">●\u0020\u0020\u0020对自来水进行第一级过滤，滤除泥沙、铁锈、纤维等肉眼可见物。</string>
+    <string name="iot_water_purifier_filter_pp_desc2">●\u0020\u0020\u0020前置预处理，滤除相对粒径较大的杂质与颗粒，保护反渗透滤芯，避免反渗透膜污堵。</string>
+    <string name="iot_water_purifier_filter_front">前置活性炭滤芯</string>
+    <string name="iot_water_purifier_filter_front_remain">前置活性炭滤芯剩余</string>
+    <string name="iot_water_purifier_filter_front_desc">去除水中异味，有效吸附余氯等</string>
+    <string name="iot_water_purifier_filter_front_desc1">●\u0020\u0020\u0020对自来水进行第二级过滤，吸附水中的异色、异味、余氯及部分有机物。</string>
+    <string name="iot_water_purifier_filter_front_desc2">●\u0020\u0020\u0020前置预处理，吸附余氯等物质，保护反渗透滤芯，防止反渗透膜氧化损坏。</string>
+    <string name="iot_water_purifier_filter_ro">RO反渗透滤芯</string>
+    <string name="iot_water_purifier_filter_ro_remain">RO反渗透滤芯剩余</string>
+    <string name="iot_water_purifier_filter_ro_desc">去除抗生素、有机物、重金属和细菌等</string>
+    <string name="iot_water_purifier_filter_ro_desc1">●\u0020\u0020\u0020对自来水进行第三级过滤，滤除水中的重金属、细菌、水垢、有机物等杂质。</string>
+    <string name="iot_water_purifier_filter_ro_desc2">●\u0020\u0020\u0020理论过滤精度可达0.0001微米，其使用寿命和去除效果受当地水质、用户使用习惯及前两级滤芯的处理能力的影响。</string>
+    <string name="iot_water_purifier_filter_ro_desc3">●\u0020\u0020\u0020采用美国陶氏/GE进口RO膜，对自来水进行更精细的过滤，有效滤除水中的重金属、细菌、病毒、抗生素、水垢、有机物等杂质，理论过滤精度可达0.0001微米。</string>
+    <string name="iot_water_purifier_filter_behind">后置活性炭滤芯</string>
+    <string name="iot_water_purifier_filter_behind_remain">后置活性炭滤芯剩余</string>
+    <string name="iot_water_purifier_filter_behind_desc">进一步改善口感</string>
+    <string name="iot_water_purifier_filter_behind_desc1">●\u0020\u0020\u0020对反渗透滤芯生产的纯水进行深度净化，吸附异味，改善口感。</string>
+    <string name="iot_water_purifier_filter_behind_desc2">●\u0020\u0020\u0020纯水的后置处理滤芯，寿命到期后不更换可能会影响口感，甚至滋生细菌。</string>
+    <string name="iot_water_purifier_filter_intelligence">智能3合1滤芯</string>
+    <string name="iot_water_purifier_filter_intelligence_remain">智能3合1滤芯剩余</string>
+    <string name="iot_water_purifier_filter_intelligence_desc">以一抵三、高效过滤、更换简单</string>
+    <string name="iot_water_purifier_filter_intelligence_desc2">●\u0020\u0020\u0020折叠PP滤芯|精选优质折叠PP滤材，过滤面积更大，孔径均匀，纳污量大，利用率更高，使用寿命长一倍，有效滤除泥沙、铁锈等大颗粒杂质；</string>
+    <string name="iot_water_purifier_filter_intelligence_desc3">●\u0020\u0020\u0020前置炭棒过滤|精选韩国进口炭棒，吸附更均匀，更有效吸附余氯、异味及部分有机物；</string>
+    <string name="iot_water_purifier_filter_intelligence_desc4">●\u0020\u0020\u0020后置炭棒过滤|精选韩国进口炭棒，过滤精度高，吸附能力强，进一步改善口感.</string>
+    <string name="iot_water_purifier_filter_intelligence_desc1">●\u0020\u0020\u0020滤芯集成了反渗透净水机的124级滤芯，第一级采用进口的折叠PP与第二级进口碳棒复合作为预处理，过滤泥沙，铁锈，纤维，异色，异味，余氯，三氯甲烷四氯化碳等有机物；采用进口的碳棒作为后处理进行改善口感。</string>
+    <string name="iot_water_purifier_filter_pure_tank">Pure Tank</string>
+    <string name="iot_water_purifier_filter_pure_tank_remain">Pure Tank剩余</string>
+    <string name="iot_water_purifier_filter_pure_tank_desc">专利密封纯水储水装置</string>
+    <string name="iot_water_purifier_filter_pure_tank_desc1">●\u0020\u0020\u0020专利Pure Tank采用医疗级别TPU制成，袋子密闭，用于保存反渗透过滤出来的纯净水，保证水干净密封。</string>
+    <string name="iot_water_purifier_filter_pure_tank_desc2">●\u0020\u0020\u0020保证流畅的使用纯水需求。</string>
+    <string name="iot_water_purifier_filter_detail">详情</string>
+    <string name="iot_water_purifier_temp_setting">设定出水温度</string>
+    <string name="iot_water_purifier_temp_value">%1$d℃</string>
+    <string name="iot_water_purifier_temp">温度</string>
+    <string name="iot_water_purifier_temp_tip_40">40℃适合冲益生菌</string>
+    <string name="iot_water_purifier_temp_tip_50">50℃适合冲奶/饮用</string>
+    <string name="iot_water_purifier_temp_tip_60">60℃适合冲蜂蜜水</string>
+    <string name="iot_water_purifier_temp_tip_75">75℃适合冲泡龙井</string>
+    <string name="iot_water_purifier_temp_tip_80">80℃适合冲绿茶</string>
+    <string name="iot_water_purifier_temp_tip_85">85℃适合冲泡大红袍/咖啡</string>
+    <string name="iot_water_purifier_temp_tip_90">90℃适合冲泡铁观音</string>
+    <string name="iot_water_purifier_flow">设定出水流量</string>
+    <string name="iot_water_purifier_flow_value">%1$dml</string>
+    <string name="iot_water_purifier_flow_small">小杯</string>
+    <string name="iot_water_purifier_flow_middle">中杯</string>
+    <string name="iot_water_purifier_flow_big">大杯</string>
+    <string name="iot_water_purifier_min_temp">40℃</string>
+    <string name="iot_water_purifier_max_temp">90℃</string>
+
+    <string name="level_none">不脫水</string>
+    <string name="level_gentle">柔脱水</string>
+    <string name="level_mild">轻脫水</string>
+    <string name="level_middle">中脫水</string>
+    <string name="level_strong">强脫水</string>
+
+    <string name="pro_goldenwash">黄金洗</string>
+    <string name="pro_drumclean">洁筒洗</string>
+    <string name="pro_spin">单脱水</string>
+    <string name="pro_antibacterial">除菌螨</string>
+    <string name="pro_super_quick">超快洗</string>
+    <string name="pro_cottons">棉织物</string>
+    <string name="pro_shirts">衬衣</string>
+    <string name="pro_child_cloth">童衣洗</string>
+    <string name="pro_jeans">牛仔</string>
+    <string name="pro_wool">羊毛</string>
+    <string name="pro_down">羽绒服</string>
+    <string name="pro_chiffon">雪纺</string>
+    <string name="pro_outdoor">运动服</string>
+    <string name="pro_delicates">精细织物</string>
+    <string name="pro_underwears">内衣</string>
+    <string name="pro_rinse_spin">漂+脱</string>
+    <string name="pro_MyTime">自定义</string>
+    <string name="pro_cottonEco">棉Eco</string>
+    <string name="pro_silk">丝绸</string>
+    <string name="pro_CoPro">护色</string>
+    <string name="pro_SoWash">浸泡洗</string>
+    <string name="pro_BoWash">煮洗</string>
+    <string name="pro_BigWash">大物洗</string>
+    <string name="pro_Dry">单烘干</string>
+    <string name="iot_value_default">--</string>
+    <string name="iot_from">\u0020\u0020来自</string>
+    <string name="iot_buy_confirm">立即购买</string>
+
+
+    <!--互联网家-->
+    <string name="iot_user_home">%1$s的家</string>
+    <string name="iot_device_fridge">冰箱</string>
+    <string name="iot_device_steamed_oven">蒸烤箱</string>
+    <string name="iot_device_range_hood">烟灶</string>
+    <string name="iot_device_water_purifier">净水器</string>
+    <string name="iot_device_heat_kettle">即热饮水吧</string>
+    <string name="iot_device_center_water_purifier">中央净水器</string>
+    <string name="iot_device_center_water_softener">中央软水机</string>
+    <string name="iot_device_dish_washing">洗碗机</string>
+    <string name="iot_device_washing_machine">洗衣机</string>
+    <string name="iot_device_water_heater">热水器</string>
+    <string name="iot_device_air_purifier">空气净化器</string>
+    <string name="iot_device_fan">风扇</string>
+    <string name="iot_device_aromatherapy_machine">香熏机</string>
+    <string name="iot_device_health_kettle">养生壶</string>
+    <string name="iot_device_sweep_robot">扫地机器人</string>
+    <string name="iot_device_camera">摄像头</string>
+    <string name="iot_device_online">设备在线</string>
+    <string name="iot_device_offline">设备离线</string>
+    <string name="iot_device_type_offline">离线</string>
+
+    <!--冰箱控制-->
+    <string name="fridge_mode_intelligence">智能模式</string>
+    <string name="fridge_mode_holiday">假日模式</string>
+    <string name="fridge_quick_cold">速冷</string>
+    <string name="fridge_quick_freeze">速冻</string>
+    <string name="fridge_one_key_clean">一键净化</string>
+    <string name="fridge_filter_status">滤芯状态</string>
+    <string name="fridge_room_cold">冷藏室</string>
+    <string name="fridge_room_cold_changeable">冷藏变温区</string>
+    <string name="fridge_room_changeable">变温室</string>
+    <string name="fridge_room_freezing">冷冻室</string>
+    <string name="fridge_filter_least">滤芯剩余：%1$d</string>
+    <string name="fridge_filter_reset">重置滤芯</string>
+    <string name="fridge_filter_buy">购买滤芯</string>
+    <string name="fridge_fresh_fruit">鲜果</string>
+    <string name="fridge_retain_freshness">0度保鲜</string>
+    <string name="fridge_iced">冰镇</string>
+    <string name="fridge_temp_unit">℃</string>
+    <string name="fridge_close">关</string>
+    <string name="fridge_open">开</string>
+    <string name="fridge_temp_default">--</string>
+    <string name="fridge_filter_buy_tip">滤芯暂未上线，敬请期待</string>
+    <string name="fridge_one_key_clean_doing">净化中</string>
+    <string name="fridge_off">OFF</string>
+    <string name="fridge_tip_1">温馨提醒：冷藏室可以为我们的新鲜食物冻龄哦,比如放置新鲜的水果和蔬菜</string>
+    <string name="fridge_tip_2">温馨提醒：您可以根据放入的食材选择系统推荐温度，也可以自定义设置变温室的温度</string>
+    <string name="fridge_tip_3">温馨提示：冷冻室和冷藏室一样，也必须生熟分开，荤素分开。而且所有食品必须独立分装，避免相互污染哦</string>
+    <string name="fridge_tip_4">主人您好，冷藏室进入速冷模式了哦。感觉自己棒棒哒！速冷进行中..</string>
+    <string name="fridge_tip_5">冷冻室现在进入速冻模式啦，有木有感觉到丝丝寒冷！速冻进行中…</string>
+    <string name="fridge_tip_6">主人您好，你可以语音呼叫“云米冰箱”唤醒我哦~快来试试吧！</string>
+    <string name="fridge_tip_7">小鲜永远当您的健康小卫士，记得常来看看我哦~</string>
+    <string name="fridge_tip_8">什么都不怕，一键净化来帮您！正在净化中…</string>
+    <string name="fridge_tip_9">智能模式中，全面为您的食材与健康保驾护航！</string>
+    <string name="fridge_tip_10">假日模式已开启，长假出游小鲜帮您轻松搞定</string>
+    <string name="giving_system_location_permissions">需要定位权限</string>
+
+</resources>

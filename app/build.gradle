@@ -1,0 +1,138 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    defaultConfig {
+        applicationId rootProject.ext.android.applicationId
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        ndk {
+            abiFilters "armeabi"
+        }
+    }
+    signingConfigs {
+        release {
+            keyAlias RELEASE_KEY_ALIAS
+            keyPassword RELEASE_KEY_PASSWORD
+            storeFile file(RELEASE_STORE_FILE)
+            storePassword RELEASE_STORE_PASSWORD
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    // 自定义打包名称
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+//            def fileName = defaultConfig.applicationId + "-" + buildType.name + "-v" + defaultConfig.versionCode + ".apk"
+            def fileName =  "fridge_v" + defaultConfig.versionName +  "_"+buildType.name +".apk"
+            outputFileName = fileName
+        }
+    }
+//    //自定义打包名字
+//    applicationVariants.all {
+//        variant ->
+//            variant.outputs.each {
+//                output -> output.outputFile = new File(output.outputFile.parent, "fridge_v" + defaultConfig.versionName + "_" + buildType.name + ".apk");
+//            }
+//    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/INDEX.LIST'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/io.netty.versions.properties'
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    buildToolsVersion '27.0.3'
+}
+
+// 本地依赖包
+repositories {
+    maven {
+        url 'http://mijia.sdk.westm.cn'
+    }
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+greendao {
+    schemaVersion 1 // 数据库版本号，更新数据库需要修改
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation project(':widget')
+    implementation files('libs/AMap_Location_V3.5.0_20170731.jar')
+    implementation rootProject.ext.dependencies["miiot"]
+    implementation rootProject.ext.dependencies["mijia-client"]
+    implementation rootProject.ext.dependencies["mijia-service"]
+    implementation rootProject.ext.dependencies["mijia-bluetooth"]
+    implementation rootProject.ext.dependencies["appcompat-v7"]
+    implementation rootProject.ext.dependencies["recyclerview-v7"]
+    implementation rootProject.ext.dependencies["design"]
+    implementation rootProject.ext.dependencies["butterknife"]
+    implementation rootProject.ext.dependencies["dagger"]
+    implementation rootProject.ext.dependencies["dagger-android"]
+    implementation rootProject.ext.dependencies["retrofit"]
+    implementation rootProject.ext.dependencies["cardview"]
+    implementation rootProject.ext.dependencies["adapter-rxjava"]
+    implementation rootProject.ext.dependencies["rxandroid"]
+    implementation rootProject.ext.dependencies["okhttp3-logging-interceptor"]
+    implementation rootProject.ext.dependencies["retrofit2-fastjson-converter"]
+    implementation rootProject.ext.dependencies["fastjson"]
+    implementation rootProject.ext.dependencies["sonic"]
+    implementation rootProject.ext.dependencies["glide"]
+    implementation rootProject.ext.dependencies["fresco"]
+    implementation rootProject.ext.dependencies["fresco-gif"]
+    implementation rootProject.ext.dependencies["pickerview"]
+    implementation rootProject.ext.dependencies["greendao"]
+    implementation rootProject.ext.dependencies["multidex"]
+    implementation 'org.glassfish:javax.annotation:10.0-b28'
+    annotationProcessor rootProject.ext.dependencies["dagger-compiler"]
+    annotationProcessor rootProject.ext.dependencies["dagger-processor"]
+    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
+//    implementation files('libs/umeng-common-1.5.1.jar')
+//    implementation files('libs/umeng-debug-1.0.0.jar')
+//    implementation files('libs/umeng-analytics-7.5.1.jar')
+    compile 'com.tencent.bugly:crashreport_upgrade:1.3.4'
+//    implementation 'com.jakewharton:butterknife:8.8.1'
+//    implementation 'com.jakewharton:butterknife-compiler:8.1.0'
+}

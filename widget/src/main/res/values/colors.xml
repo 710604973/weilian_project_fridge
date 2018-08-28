@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text_black">#333333</color>
+    <color name="divide_line_color">#EFEFEF</color>
+    <color name="line_color">#0B3381</color>
+    <color name="dialog_left_text">#666666</color>
+    <color name="dialog_right_text">#4EE7E2</color>
+    <color name="color_filter_green">#62EAF6</color>
+    <color name="color_66">#666666</color>
+</resources>

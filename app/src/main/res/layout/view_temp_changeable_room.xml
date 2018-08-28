@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:paddingRight="4dp"
+    android:paddingLeft="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/status_bar"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="132dp">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/icon_temp_changeable_room"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_toRightOf="@id/icon"
+            android:text="@string/text_temp_changeable_room"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/temp"
+            android:text=""
+            android:layout_toRightOf="@id/title"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:layout_width="60dp"
+            android:gravity="left"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/temp_unit"
+            android:text="℃"
+            android:layout_toRightOf="@id/temp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/icon_decrease"
+            android:layout_toRightOf="@id/temp_unit"
+            android:layout_marginLeft="24dp"
+            android:src="@drawable/button_decrease"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.viomi.common.widget.SwitchButton
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            style="@style/SwitchButtonStyle"
+            app:kswBackMeasureRatio="2.1"
+            app:kswThumbDrawable="@drawable/switch_thumb"
+            app:kswBackDrawable="@drawable/switch_backgroud"
+            app:kswThumbMarginBottom="2dp"
+            app:kswThumbMarginLeft="2dp"
+            app:kswThumbMarginRight="2dp"
+            app:kswThumbMarginTop="2dp"
+            app:kswBackRadius="23dp"
+            app:kswThumbRadius="21dp"
+            android:id="@+id/switch_button"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:kswTextOff="@string/switch_button_off"
+            app:kswTextOn="@string/switch_button_on"
+            android:textColor="@color/ksw_md_back_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/icon_increase"
+            android:layout_toLeftOf="@id/switch_button"
+            android:layout_marginRight="24dp"
+            android:src="@drawable/button_increase"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_centerVertical="true"
+            style="@style/Widget.SeekBar.NormalTemp"
+            android:layout_toLeftOf="@id/icon_increase"
+            android:layout_marginRight="14dp"
+            android:layout_toRightOf="@id/icon_decrease"
+            android:layout_marginLeft="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+            <TextView
+                android:id="@+id/scecn_view"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="6dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/scene_radiogroup"
+        android:layout_below="@id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/scene0"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/button_scene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="自定义"
+            android:textColor="@color/scene_text_color"
+            android:drawablePadding="8dp"
+            />
+
+        <RadioButton
+            android:id="@+id/scene1"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_marginLeft="17dp"
+            android:background="@drawable/button_scene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="2"
+            android:textColor="@color/scene_text_color"
+            android:drawablePadding="8dp"
+            />
+
+        <RadioButton
+            android:id="@+id/scene2"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/button_scene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="2"
+            android:layout_marginLeft="17dp"
+            android:textColor="@color/scene_text_color"
+            android:drawablePadding="8dp"
+          />
+
+        <RadioButton
+            android:id="@+id/scene3"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_marginLeft="17dp"
+            android:background="@drawable/button_scene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="2"
+            android:textColor="@color/scene_text_color"
+            android:drawablePadding="8dp"
+            />
+
+        <RadioButton
+            android:id="@+id/scene4"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_marginLeft="17dp"
+            android:background="@drawable/button_scene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="2"
+            android:textColor="@color/scene_text_color"
+            android:drawablePadding="8dp"
+            />
+
+        <RadioButton
+            android:id="@+id/scene5"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_marginLeft="17dp"
+            android:background="@drawable/button_scene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="2"
+            android:textColor="@color/scene_text_color"
+            android:drawablePadding="8dp"
+            />
+
+        <RadioButton
+            android:id="@+id/scene_more"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_marginLeft="17dp"
+            android:background="@drawable/button_scene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/text_scene_more"
+            android:textColor="@color/scene_text_color"
+            android:drawablePadding="8dp"
+            />
+
+        <RadioButton
+            android:id="@+id/scene_custom"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_marginLeft="17dp"
+            android:background="@drawable/button_scene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/text_scene_custom"
+            android:textColor="@color/scene_text_color"
+            android:drawablePadding="8dp"
+           />
+
+    </RadioGroup>
+
+
+</RelativeLayout>

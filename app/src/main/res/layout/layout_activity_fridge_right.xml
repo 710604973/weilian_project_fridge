@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:textColor="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/smart_button"
+        android:textColor="@color/mode_text_color"
+        android:layout_marginTop="18dp"
+        android:text="@string/button_model_smart"
+        android:button="@null"
+        android:drawableTop="@drawable/button_smart_model"
+        android:drawablePadding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/holiday_button"
+        android:layout_marginTop="18dp"
+        android:textColor="@color/mode_text_color"
+        android:text="@string/button_model_holiday"
+        android:button="@null"
+        android:gravity="center"
+        android:drawablePadding="8dp"
+        android:drawableTop="@drawable/button_holiday_model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/qiuck_cool_button"
+        android:visibility="gone"
+        android:layout_marginTop="18dp"
+        android:textColor="@color/mode_text_color"
+        android:text="@string/text_quick_cooling"
+        android:button="@null"
+        android:gravity="center"
+        android:drawablePadding="8dp"
+        android:drawableTop="@drawable/button_quick_cool_model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/qiuck_frezze_button"
+        android:layout_marginTop="18dp"
+        android:visibility="gone"
+        android:textColor="@color/mode_text_color"
+        android:text="@string/text_quick_freeze"
+        android:button="@null"
+        android:gravity="center"
+        android:drawablePadding="8dp"
+        android:drawableTop="@drawable/button_quick_freeze_model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/one_key_clean_button"
+        android:text="@string/button_one_key_clean"
+        android:textColor="@color/mode_text_color"
+        android:layout_marginTop="18dp"
+        android:button="@null"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:drawableTop="@drawable/button_one_key_clean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.mode.fridge.widget.ProgressWheel
+        xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progress_bar"
+        android:layout_marginTop="18dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        ProgressWheel:barColor="@color/gainsboro"
+        ProgressWheel:barWidth="4dp"
+        ProgressWheel:rimColor="@color/control_enable_color"
+        ProgressWheel:rimWidth="4dp"
+        ProgressWheel:spinSpeed="3dp"
+        ProgressWheel:text="80"
+        ProgressWheel:textColor="@color/control_enable_color"
+        ProgressWheel:textSize="28sp"
+        ProgressWheel:unitTextSize="12sp"
+        />
+
+    <TextView
+        android:text="@string/text_filter_status"
+        android:textSize="14sp"
+        android:id="@+id/filter_text"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/control_enable_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+</LinearLayout>

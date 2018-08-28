@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/background_gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <com.mode.fridge.widget.snowingview.SnowingSurfaceView
+            xmlns:room="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/snowing_view2"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            room:src="@mipmap/ic_snowflake"
+            room:snowCount="15"
+            />
+
+        <ImageView
+            android:id="@+id/close_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="674dp"
+            android:src="@mipmap/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.mode.fridge.widget.ColdClosetView
+            android:id="@+id/cold_closet_layout"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="148dp"
+            android:layout_width="696dp"
+            android:layout_height="132dp">
+        </com.mode.fridge.widget.ColdClosetView>
+
+        <View
+            android:id="@+id/divide1"
+            android:layout_below="@id/cold_closet_layout"
+            android:background="@color/white"
+            android:layout_width="686dp"
+            android:layout_height="2dp">
+        </View>
+
+        <com.mode.fridge.widget.TempChangeableRoomView
+            android:id="@+id/temp_changeable_room_layout"
+            android:layout_below="@id/divide1"
+            android:layout_width="696dp"
+            android:layout_height="242dp">
+        </com.mode.fridge.widget.TempChangeableRoomView>
+
+        <View
+            android:id="@+id/divide2"
+            android:layout_below="@id/temp_changeable_room_layout"
+            android:background="@color/white"
+            android:layout_width="686dp"
+            android:layout_height="2dp">
+        </View>
+
+        <com.mode.fridge.widget.FreezingRoomView
+            android:id="@+id/freezing_room_layout"
+            android:layout_below="@id/divide2"
+            android:layout_width="696dp"
+            android:layout_height="132dp">
+        </com.mode.fridge.widget.FreezingRoomView>
+
+</RelativeLayout>

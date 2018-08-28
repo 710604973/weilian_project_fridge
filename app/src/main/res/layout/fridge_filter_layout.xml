@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="640dp"
+    android:background="@drawable/half_conner_shape"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="640dp"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:gravity=""
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:padding="15dp"
+                android:id="@+id/close_icon"
+                android:src="@drawable/ic_cancel2" />
+
+            <TextView
+                android:text="@string/title_filter_status"
+                android:layout_centerInParent="true"
+                android:textColor="@color/gray"
+                android:textSize="24sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/fridge_filter" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="滤芯剩余 80%"
+            android:id="@+id/filter_remain"
+            android:textColor="@color/control_enable_color"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/fridge_filter_reset_bg"
+            android:gravity="center"
+            android:text="重置滤芯"
+            android:id="@+id/filter_reset"
+            android:textColor="#fc2626"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/fridge_filter_buy_bg"
+            android:gravity="center"
+            android:text="购买滤芯"
+            android:id="@+id/filter_buy"
+            android:textColor="@color/control_enable_color"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
